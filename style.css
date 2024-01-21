@@ -167,8 +167,6 @@ section{
     justify-content: center;
     gap: 9rem;
     height: 70vh;
-    margin-right: 17.5rem;
-    margin-left: 17.5rem;
     margin-bottom: 10rem;
 
 }
@@ -414,7 +412,7 @@ article.icon{
     border-color: rgb(163,163,163);
     background: (250,250,250);
     margin: 2rem auto;
-    padding: 1rem;
+    padding: .8rem;
 }
 
 .contact-info-container{

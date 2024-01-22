@@ -165,9 +165,8 @@ section{
 #profile{
     display:flex;
     justify-content: center;
-    gap: 9rem;
-    height: 70vh;
-    margin-bottom: 10rem;
+    gap: 5rem;
+    height: 80vh;
 
 }
 
@@ -412,14 +411,14 @@ article.icon{
     border-color: rgb(163,163,163);
     background: (250,250,250);
     margin: 2rem auto;
-    padding: .8rem;
+    padding: 0.5rem;
 }
 
 .contact-info-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
     margin: 1rem;
 
 }

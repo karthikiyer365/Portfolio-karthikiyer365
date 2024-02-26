@@ -8,8 +8,8 @@
 }
 @media screen and (max-width: 1400px){
     #profile{
-        height: 83vh;
-        margin-bottom: 6rem;
+        height: auto;
+        margin-bottom: auto;
     }
 
     .about-containers{
@@ -35,7 +35,7 @@
     .section__pic-container{
         width: 275px;
         height: 275px;
-        margin: 0 auto 2rem;
+        margin: 0 auto;
     }
     .about-containers{
         margin-top: 0;
@@ -49,7 +49,7 @@
     }
 
     #profile{
-        height: 83vh;
+        height: auto;
         margin-bottom: 0;
     }
     article{

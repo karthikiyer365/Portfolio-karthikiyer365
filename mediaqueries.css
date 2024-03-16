@@ -5,6 +5,7 @@
     #hamburger-nav{
         display: flex;
     }
+
 }
 @media screen and (max-width: 1400px){
     #profile{

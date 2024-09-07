@@ -291,12 +291,6 @@ display: flex;
     border-radius: 2rem;
 }
 
-.arrow{
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-}
-
 .details-container{
     padding: 1.5rem;
     flex: 1;
@@ -447,11 +441,3 @@ footer p{
     color: white;
 }
 
-.scroll-down {
-	position: absolute;
-	left: 50%;
-	bottom: 38px;
-    -webkit-animation: fade_move_down 4s ease-in-out infinite;
-	-moz-animation:    fade_move_down 4s ease-in-out infinite;
-	animation:         fade_move_down 4s ease-in-out infinite;
-}

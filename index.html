@@ -104,6 +104,27 @@
                     <h2 class="experience-sub-title">Analytical Software</h2>
                     <div class="article-container">
                         <article>
+                            <script>
+                                // Example data and layout for a Plotly chart
+                                var data = [{
+                                    x: [1, 2, 3, 4, 5],
+                                    y: [10, 15, 13, 17, 10],
+                                    type: 'scatter'
+                                }];
+                                
+                                var layout = {
+                                    title: 'Sample Plotly Chart',
+                                    xaxis: {
+                                        title: 'X Axis'
+                                    },
+                                    yaxis: {
+                                        title: 'Y Axis'
+                                    }
+                                };
+                        
+                                // Create the plot
+                                Plotly.newPlot('chart', data, layout);
+                            </script>
                             <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
                             <div>
                                 <h3>Python</h3>

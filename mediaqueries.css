@@ -1,3 +1,6 @@
+/* Adapt btn, btn-2, btn-3{width: fit-content, socials-container icon   */
+
+
 @media screen and (max-width: 1200px){
     #desktop-nav{
         display: none;
@@ -19,6 +22,9 @@
     #experience,.experience-details-container{
         margin-top: 2rem;
 
+    }
+    .profile-pic-container{
+        display: none;
     }
     #profile,
     .section-container{
@@ -43,19 +49,24 @@
     #contact,
     footer{
         height: 40vh;
-        width: auto;
+        /* width: auto; */
     }
 
     #profile{
         height: auto;
-        margin-bottom: 0;
+        align-items: justify;
+        flex-direction: row-reverse;
+        margin: 0 10vw;
+    }
+    .profile-pic-container{
+        height: auto;
+        flex-direction: row-reverse;
     }
     article{
         font-size: 1rem;
     }
     footer nav{
         height: fit-content;
-        margin-bottom: 2rem;
     }
     .about-containers,
     .contact-info-upper-container,
@@ -68,7 +79,7 @@
 
     }
     .contact-info-container p,.nav-links li a{
-        font-size: 1rem;
+        font-size: 1vh;
 
     }
     
@@ -112,8 +123,3 @@
     50%  { opacity: 1;  }
     100% { transform:translate(0,10px); opacity: 0; }
   }
-
-
-
-
-

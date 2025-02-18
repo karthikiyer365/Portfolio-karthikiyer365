@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <!-- Google Analytics tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMVWTJ7M4X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMVWTJ7M4X"></script> -->
 
-  gtag('config', 'G-WMVWTJ7M4X');
-</script>
+<!-- Google Analytics tag (gtag.js) -->
+    <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WMVWTJ7M4X');
+    </script> -->
 
-    <!-- Google Tag Manager -->
-<script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];
-        w[l].push({'gtm.start':new Date().getTime(), event:'gtm.js'});
-        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer'?'&l='+l:''; 
-        j.async =true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id='+ i + dl;
-        f.parentNode.insertBefore(j, f);
-    })
-    (window, document, 'script', 'dataLayer', 'GTM-NPXQTBL7');
-</script>
+<!-- Google Tag Manager -->
+    <!-- <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];
+            w[l].push({'gtm.start':new Date().getTime(), event:'gtm.js'});
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer'?'&l='+l:''; 
+            j.async =true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id='+ i + dl;
+            f.parentNode.insertBefore(j, f);
+        })
+        (window, document, 'script', 'dataLayer', 'GTM-NPXQTBL7');
+    </script> -->
+    
 <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karthik Iyer's Portfolio</title>
+    <title>Karthik Iyer - Data Analyst</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
 </head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript>
+<!-- <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPXQTBL7" height="0" width="0" style="display:none;visibility:hidden">
     </iframe>
-</noscript>
+</noscript> -->
     <!-- End Google Tag Manager (noscript) -->
     <nav id="desktop-nav">
-        <div class="logo">Karthik Iyer</div>
+        <div class="logo">
+            Ki.    
+        </div>
+        <!-- Navigation Links for Desktop -->
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#techstack">Tech Stack</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Karthik Iyer</div>
+        <div class="logo">
+                KSI.
+        </div>
+        
+        <!-- Navigation Links for Mobile -->
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -58,151 +68,478 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="#techstack" onclick="toggleMenu()">Tech Stack</a></li>
+                <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Karthik Iyer Profile Picture" class="about-pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1"> Hello, I'm</p>
-            <h1 class="title"> Karthik Iyer</h1>
-            <p class="section__text__p2"> Data Analyst</p>
-            <div class="btn-container" >
-                <button class="btn btn-color-2" onclick="window.open('./assets/MyResume.pdf')">Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My Linkedin page" class="icon" onclick="location.href='https://www.linkedin.com/in/kiyer8/'">
-                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/karthikiyer365'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get to know more</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile Piction" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>2+ years <br>Data Analyst</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" class="icon">
-                        <h3>Education</h3>
-                        <p>B.Eng Computer Engineering <br>M.Sc Data Analytics</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                    I am a <b>Data Analyst</b> and <b>Visual Storyteller</b>.<br> 
-                    As a data enthusiast, I work with my niche of skills in sharing information 
-                    with the most <b>captivating means of communication</b>. 
-                    Having tackled, a wide range of data projects in a variety of industries, I have been able to understand numerous issues, currently in the industry.
+        <div class="profile-content">
+            <h1 class="title" >Karthik Iyer</h1>
+            <div>
+                <p class="profile-textbox"><span class="auto-type"></span>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed('.auto-type', {
+                      strings: ['&nbsp;Data Analyst..','&nbsp;Power BI Developer..','&nbsp;Project Manager..', '&nbsp;ML Engineer..','&nbsp;Financial Analyst..','&nbsp;Sports Analyst'],
+                      typeSpeed: 20,
+                      backSpeed: 35,
+                      loop: true,
+                      showCursor: false,
+                    });
+                </script>
                 </p>
+                <p class="profile-textbox" style="margin-left: .25vw;">
+                Storyteller turned Data Analyst.<br>
+                Passionate about turning data into insights, leveraging extensive skills, diverse technologies, and programming expertise to drive efficiency and deliver impactful solutions
+                I work at the conjunction of Technology and Communication to ensure smooth sharing of information through the captivating means of communication.
+                </p>
+            </div>
+            <div class="btn-container" >
+                <button class="btn" onclick="window.open('./assets/MyResume.pdf')">Download CV
+                </button>
+                <button class="btn" onclick="location.href='./#contact'">Contact Info
+                </button>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My Linkedin page" class="icon" onclick="location.href='https://www.linkedin.com/in/kiyer8/'">
+                    <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/karthikiyer365'">
+                    <img src="./assets/instalogo.png" alt="My Instagram account" class="icon" onclick="location.href='https://github.com/karthikiyer365'">
                 </div>
             </div>
+            
+        </div>
+        <div class="profile-pic-container">
+            <img src="./assets/profile-pic.png" alt="Karthik Iyer Profile Picture">
         </div>
     </section>
-    <section id="experience">
-        <p class="section__text__p1"> Explore My </p>
-        <h1 class="title"> Experience</h1>
-        <b><p class="experience-description">Data Cleaning, API Handling, Statistical Modelling, Data Visualization,  Multivariate Analytics, Machine Learning, Data Mining, Feature Engineering, NLP </p></b>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Analytical Software</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <b>Experienced</b>
-                                <p>Numpy, Pandas, Matplotlib, sci-kit learn, seaborn, plotly & dash</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>SQL</h3>
-                                <b>Intermediate</b>
-                                <p>MySQL, PostgreSQL, Data Aggregation, Table Joins</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Excel</h3>
-                                <b>Intermediate</b>
-                                <p>VLookup, Query Editor, Charts and Visualization</p>
-
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Tableau</h3>
-                                <b>Basic</b>
-                                <p>Data Visualization, Report Generation</p>
-                            </div>
-                        </article>
+    <section id="resume">
+        <h1 class="title">Career Snapshot</h1>
+        <div class="about-container">
+            <div class="sidebar">
+                <button class="btn-color-2 active" onclick="showContent('overview')">About</button>
+                <button class="btn-color-2" onclick="showContent('experience')">Experience</button>
+                <button class="btn-color-2" onclick="showContent('education')">Education</button>
+                <button class="btn-color-2" onclick="showContent('skills')">Skills</button>
+            </div>
+            <div class="content">
+                <!-- Overview Section -->
+                <div id="overview" class="content-section active">
+                    <h1>About Me</h1>
+                    <p>As a Data Analyst, I have undertaken various roles and projects to 
+                        accomplish 4+ years of experience, working in Medical, Sports, Financial, Operational,
+                        Marketing and Technical Support.</p>
+                    <div class="cards" style="flex-direction: row; max-height: max-content;">
+                        <div class="card" style="width: 45%; align-self: center; margin-top: 1rem;">
+                            <h2>Location</h2>
+                            <p>Arlington, VA</p>
                         </div>
+                        <div class="card" style="width: 45%; align-self: center; margin-top: 1rem;">
+                            <h2>Email</h2>
+                            <p>karthikiyer365@gmail.com</p>
+                        </div>
+                        <div class="card" style="width: 45%; align-self: center; margin-top: 1rem;">
+                            <h2>Age</h2>
+                            <p>24 years</p>
+                        </div>
+                        <div class="card" style="width: 45%; align-self: center; margin-top: 1rem;">
+                            <h2>Languages</h2>
+                            <p>Engligh, Hindi, Marathi, Tamil, French</p>
+                        </div>
+                        <div class="card" style="width: 45%; align-self: center; margin-top: 1rem;">
+                            <h2>Contact No.</h2>
+                            <p>+1(202)713-1699</p>
+                        </div>
+                        <div class="card" style="width: 45%; align-self: center; margin-top: 1rem;">
+                            <h2>Nationality</h2>
+                            <p>South Asian</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Additional Tools</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Git, Slack </h3>
-                                <b>Intermediate</b>
-                                <p>Version Control, Workflow, Team coordination</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Minitab</h3>
-                                <b>Intermediate</b>
-                                <p>Statistical Analysis, Probabilistic Analysis, Time Series Analysis</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>Database</h3>
-                                <b>Basic</b>
-                                <p>MongoDB, AWS, Databricks, Azure pipeline</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                            <div>
-                                <h3>PHP, HTML, Node.js</h3>
-                                <b>Basic</b>
-                                <p>Website Developement, Server Connection</p>
-                            </div>
-                        </article>
 
+                <!-- Experience Section -->
+                <div id="experience" class="content-section">
+                    <h1>My Experience</h1>
+                    <p>As a Data Analyst, I have undertaken various roles and projects to 
+                        cover about 4+ years of experience, working in Financial, Operational,
+                        Marketing and Technical Support. </p>
+                    <div class="cards">
+                        <div class="card">
+                            <h2>Financial Analyst</h2>
+                            <h3>DPSY & Associates</h3>
+                            <h3>April 2023 - June 2023</h3>
+                            <p class = info-drop>Hover for more..</p>
+                            <p class="info">I analyzed the $85B+ diamond market, identifying seasonal inventory trends 
+                                and product markups (28% off-season to 37% in-season) to recommend strategic pricing 
+                                and inventory decisions. To enhance efficiency, I streamlined data reconciliation 
+                                by developing Excel templates with VLOOKUP, Pivot Tables, and Macros, 
+                                reducing manual effort and improving analysis time by 25%. Additionally, I consulted on 
+                                24-month audit reports for a Loan Management System (CRM), uncovering liability cases 
+                                and discrepancies. I also collaborated on 10+ data reports for three clients, 
+                                ensuring clear communication and effective delivery of insights.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Operations and Marketing Analyst</h2>
+                            <h3>MyEquation</h3>
+                            <h3>Aug 2021 - Dec 2021</h3>
+                            <p class = info-drop>Hover for more..</p>
+                            <p class="info">I conducted market research on Ed-tech segments, 
+                                analyzing B2B and B2C marketing strategies across three states. 
+                                Collaborating with a cross-functional team of 20, I helped execute B2B strategies,
+                                securing 10+ new client relationships and acting as a liaison for four clients. 
+                                Additionally, I initiated a cross-channel strategy that improved coordination between
+                                B2C and B2B teams, resulting in a 20% increase in student registrations. 
+                                I also worked closely with the HR team to analyze monthly compensation and employee 
+                                performance across both channels.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Technical Support Assistant</h2>
+                            <h3>GWU IT</h3>
+                            <h3>Aug 2024 - Present</h3>
+                            <p class = info-drop>Hover for more..</p>
+                            <p class="info">I assisted students and faculty with MacOS and Windows system setups for 
+                                10+ applications, ensuring seamless communication and achieving a 90% customer 
+                                satisfaction rate. Additionally, I supported inventory audits and demand forecasting 
+                                using BMC Helix, contributing to an 89% operational success rate. 
+                                I also resolved 30+ technical support tickets, providing team assistance and 
+                                ensuring a 97% resolution rate for software issues.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Teaching Assistant</h2>
+                            <h3>GWU - Probability & Big Data Statistics</h3>
+                            <h3>Aug 2024 - Dec 2024</h3>
+                            <p class = info-drop>Hover for more..</p>
+                            <p class="info">I worked for Dr. Sanjay Jain and developed an auto-grading system using 
+                                Python, NLP, BERT, and Excel, saving faculty over 10 hours per week. 
+                                Improving consistency and accuracy by 25%. By centralizing the grading process, 
+                                I reduced evaluation time by 60% for over 400 assignments and quizzes. 
+                                Additionally, I conducted weekly 3-hour student interaction sessions, 
+                                simplifying complex concepts to enhance student understanding.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Education Section -->
+                <div id="education" class="content-section">
+                    <h1>My Education</h1>
+                    <p>Currently pursuing my Masters in Data Analytics, maintaining a GPA of 3.73. 
+                        Previously pursued a Bachelors in Computer Engineering. 
+                        Focused on Data Analytics, Machine Learning, Database Management and Image Processing.</p>
+                    <div class="cards">
+                        <div class="card">
+                            <h2>M.Sc. Data Analytics</h2>
+                            <h3>George Washington University</h3>
+                            <h3>Aug 2023 - May 2025</h3>
+                            <p class="info-drop">Hover for more...</p>
+                            <p class="info">While maintaining a GPA of 3.73, I worked with Prof. Michael Rossetti
+                                undertaking the research project "Audio Similarity Mapping using MFCC for Artist Recommedation".
+                                Additionally, in course of my degree, I also worked with Dr. Sanjay Jain as a Teaching Assitant 
+                                and developed an "Automated Assisgnment grading system using Regex and NLP" saving upto 10 hours 
+                                per week.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h2>B.Engg. Computer Engineering</h2>
+                            <h3>University of Mumbai</h3>
+                            <h3>Aug 2018 - May 2022</h3>
+                            <p class = info-drop>Hover for more..</p>
+                            <p class="info">I earned a Bachelor of Engineering in Computer Engineering from the 
+                                University of Mumbai in May 2022, with a CGPA of 3.50/4.00. 
+                                My coursework included Image Processing, Database Management, ERP Systems, NLP, 
+                                Website Development, and Data Structures & Algorithms, providing a strong foundation 
+                                in software development and data-driven technologies.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Skills Section -->
+                <div id="skills" class="content-section">
+                    <h1>Skills</h1>
+                    <p>I am entrepreneurial by nature as I have established an array of skills across Technical domains
+                        as well as a well round personality enabling cross-functional communication and operational ability.
+                        Having developed my skills across the board, I am able to understand team needs 
+                        as well as stakeholder requirement and act accordingly.</p>
+                    <div class="sub-active">                       
+                        <div class="radar" id="radar-tech">
+                            <script src="script.js"></script>
+                            <script>
+                                const techLayout = {
+                                    title: "Technical Proficiency",
+                                    autosize: true,
+                                    polar: {
+                                        radialaxis: {
+                                            range: [0, 100],
+                                            gridcolor: "black 20%",
+                                            visible: false
+
+                                        },
+                                    angularaxis: {
+                                        gridcolor: 'transparent', // Color of angular axis lines,
+                                    }
+                                    },
+                                    showlegend: false,
+                                    paper_bgcolor: '#96BBD4',
+                                };
+                            
+                                const techInfo = {
+                                    "Programming": 90,
+                                    "Data Preprocessing": 90,
+                                    "Feature Engineering": 85,
+                                    "Data Cleaning": 95,
+                                    "Data Visualization": 85,
+                                    "Web Scraping": 80,
+                                    "Statistics": 90,
+                                    "Probability": 75,
+                                    "Machine Learning": 80,
+                                    "Time Series Analysis" : 60,
+                                    "NLP": 80,
+                                    "Database Management": 65,
+                                    "Cloud Computing": 60
+                                    };
+                            
+                                const techData = getRadarChartData(techInfo);
+                                Plotly.newPlot("radar-tech", [{
+                                    type: "scatterpolar",
+                                    fillcolor: "rgb(0, 7, 150)",
+                                    r: techData.values,
+                                    theta: techData.labels,
+                                    fill: "toself",
+                                    name: "Proficiency"
+                                }], techLayout);
+                            </script>
+                        </div>
+
+                        <div class="radar" id="radar-soft">
+                            <script src="script.js"></script>
+                            <script>
+                                const softLayout = {
+                                        title: "Soft skills Proficiency",
+                                        autosize: true,
+                                        polar: {
+                                            radialaxis: {
+                                                range: [0, 100],
+                                                gridcolor: "black 20%",
+                                                visible: false
+                                            },
+                                        angularaxis: {
+                                            gridcolor: 'transparent', // Color of angular axis lines,
+                                        }
+                                        },
+                                        showlegend: false,
+                                        paper_bgcolor: '#96BBD4',
+                                    };
+                                
+                                const softInfo = {
+                                    "Communication": 90,
+                                    "Problem Solving": 85,
+                                    "Teamwork": 80,
+                                    "Leadership": 70,
+                                    "Project Management": 75,
+                                    "Time Management": 85,
+                                    "Critical Thinking": 80
+                                    };
+
+                                const softData = getRadarChartData(softInfo);
+                                Plotly.newPlot("radar-soft", [{
+                                    type: "scatterpolar",
+                                    fillcolor: "rgb(0, 7, 150)",
+                                    r: softData.values,
+                                    theta: softData.labels,
+                                    fill: "toself",
+                                    name: "Proficiency"
+                                }], softLayout);
+                            </script>
+
+                        </div>
+                    </div>
+
+                    <!-- const radarData = {
+                        "Data Visualization": {
+                            "Matplotlib": 90,
+                            "Power BI": 75,
+                            "Tableau": 50,
+                            "Excel": 60,
+                            "Seaborn": 80,
+                            "Google Analytics": 75
+                        },
+                        "Data Preprocessing": {
+                            "Feature Engineering": 80,
+                            "Normalization": 70,
+                            "IQR/Outlier Analysis": 30,
+                            "Categorical Encoding": 60,
+                            "Correlational Analysis": 80,
+                            "ETL Pipelining": 60
+                        },
+                        "Web Scraping": {
+                            "Beautiful Soup": 80,
+                            "Selenium": 45,
+                            "Requests": 55,
+                            "Regex": 70,
+                            "JSON/HTML": 85
+                        },
+                        "Database Management": {
+                            "Mongo DB": 50,
+                            "PostgreSQL": 70,
+                            "MySQL": 70,
+                            "RDBMS": 50,
+                            "T-SQL": 40
+                        },
+                        "Cloud Computing": {
+                            "Docker(GCP)": 50,
+                            "Looker(GCP)": 50,
+                            "EC2(AWS)": 40,
+                            "IAM(AWS)": 60,
+                            "S3(AWS)": 50
+                        },
+                        "Machine Learning": {
+                            "MULTIVARIATE LINEAR REGRESSION": 90,
+                            "LOGISTIC REGRESSION": 80,
+                            "RANDOM FOREST": 60,
+                            "SVM": 50,
+                            "DECISION TREE": 70,
+                            "LSTM": 60,
+                            "XGBOOST": 70
+                        }
+                    }; -->
+                    <div id="soft-skills" class="sub-content-section">
+                        <div class="card" style="width: 100%;">
+                        <p style="text-align:center"><progress value="70" max="100">70%</progress>Git/Github<progress value="80" max="100">80%</progress>Pipelines</p>
+                        <p style="text-align:center"><progress value="60" max="100">60%</progress>Minitab/SAS<progress value="55" max="100">55%</progress>Google Analytics</p>
+                        <p style="text-align:center"><progress value="20" max="100">20%</progress><progress value="60" max="100">60%</progress>Machine Learning</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>    
+    </section>
+    <section id="techstack">
+        <h1 class="title"> Tech Stack</h1>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <img src="logos/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/sql.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/powerbi.png" alt="Power BI">
+                <p>Power BI</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/tableau.png" alt="Tableau">
+                <p>Tableau</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/aws.png" alt="AWS">
+                <p>AWS</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/gcp.png" alt="Google Cloud Platform">
+                <p>GCP</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/vscode.png" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/numpy.png" alt="Numpy">
+                <p>Numpy</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/seaborn.png" alt="Seaborn">
+                <p>Seaborn</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/pandas.png" alt="Pandas">
+                <p>Pandas</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/mongodb.png" alt="MongoDB">
+                <p>Mongo DB</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/databricks.png" alt="DataBricks">
+                <p>DataBricks</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/postgresql.png" alt="PostgreSQL">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/spark.png" alt="Spark">
+                <p>Spark</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/css.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/javascript.png" alt="Javascript">
+                <p>Javascript</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/figma.png" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/sas.png" alt="SAS">
+                <p>SAS</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/excel.png" alt="Excel">
+                <p>MS Excel</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/plotly.png" alt="Plotly.js">
+                <p>Plotly.js</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/rstudio.png" alt="R Studio">
+                <p>R Studio</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/scikitlearn.png" alt="Sci-Kit Learn">
+                <p>Sci-Kit Learn</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/tensorflow.png" alt="Tensorflow">
+                <p>Tensorflow</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/opencv.png" alt="Open CV">
+                <p>Open CV</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/matplotlib.png" alt="Matplotlib">
+                <p>Matplotlib</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/bs4.png" alt="Beautiful Soup">
+                <p>Beautiful Soup</p>
+            </div>
+            <div class="tech-item">
+                <img src="logos/selenium.png" alt="Selenium">
+                <p>Selenium</p>
+            </div>
+        </div>
+        <!-- <div class = sidebar style="border: none; display: flex-box;">
+            <p style="text-align:center"><progress value="70" max="100">70%</progress>&ensp;Git/Github&emsp;&emsp;&emsp;<progress value="40" max="100">40%</progress>&ensp;Report Generation</p>
+            <p style="text-align:center"><progress value="15" max="100">15%</progress>&ensp;ETL Pipelining&emsp;&emsp;&emsp;<progress value="30" max="100">30%</progress>&ensp;Minitab &emsp;&emsp;&emsp;     <progress value="20" max="100">20%</progress>&ensp;Google Analytics</p>
+            <p style="text-align:center"><progress value="20" max="100">20%</progress>&ensp;Figma&emsp;&emsp;&emsp;<progress value="10" max="100">10%</progress>&ensp;Jira</p>
+        </div> -->
+    </section>
+
+        <!-- </div>
     </section>
     <section id="projects">
-        <p class="section__text__p1">Browse my Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
@@ -264,53 +601,44 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
-                <p>
-                    <a href="mailto:karthikiyer365@gmail.com">karthikiyer365@gmail.com</a>
-                </p>
-                </p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon">
-                <p>
-                    <a href="https://www.linkedin.com/in/kiyer8/">LinkedIn</a>
-                </p>
-                </p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/phoneicon.png" alt="Phone Icon" class="icon contact-icon">
-                <p>
-                    <a href="tel:+1(202)713-1699">Connect</a>
-                </p>
-                </p>
-            </div>
+        <p>Have questions or want to start a new project? 
+            I’d love to hear from you! Whether you’re looking for 
+            web design, brand identity, or a custom project, feel free 
+            to reach out. Let’s create something amazing together.</p>
+        <div class="contact-info-container" style="width: fit-content align-self=center; ">
+            <img src="./assets/email.png" alt="Email Icon" class="icon" onclick="location.href='mailto:karthikiyer365@gmail.com'">
+            <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon" onclick="location.href='https://www.linkedin.com/in/kiyer8/'">
+            <img src="./assets/phoneicon.png" alt="Phone Icon" class="icon" onclick="location.href='tel:+1(202)713-1699'">
+            <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/karthikiyer365'">
+            <img src="./assets/instalogo.png" alt="My Instagram account" class="icon" onclick="location.href='https://github.com/karthikiyer365'">
+
         </div>
+
 
     </section>
     <footer class="footer-box">
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#experience">Tech Stack</a></li>
+                    <!-- <li><a href="#projects">Projects</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                
             </div>
+            <div>
+            <p style="align-items: center;">Developed by Karthik Sivaraman Iyer<br>
+                Copyright &#169; 2025 Karthik Sivaraman Iyer. All rights Reserved.
+            </p>
+            </div>
+        
         </nav>
-        <p>Copyright &#169; 2024 Karthik Iyer. All rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>  
 </body>
 </html>
-
-
-
-

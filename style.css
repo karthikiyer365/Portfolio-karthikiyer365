@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rochester&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&family=Rochester&display=swap');
 * {
-  margin: 10;
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {

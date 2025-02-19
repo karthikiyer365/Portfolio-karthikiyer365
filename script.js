@@ -57,3 +57,22 @@ function getRadarChartData(data) {
     const values = Object.values(data);
     return { labels, values };
 }
+
+function sendEmail() {
+    // Get input values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Validate fields
+    if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        return;
+    }
+
+    // Encode the message for URL safety
+    const mailtoLink = `mailto:karthikiyer365@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom: ${name} (${email})`;
+
+    // Open email client
+    window.open(mailtoLink, '_blank');
+}

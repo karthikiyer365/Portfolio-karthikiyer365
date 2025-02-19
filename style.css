@@ -14,11 +14,11 @@ html {
 body {
     font-family: "Inter", serif;
     font-weight: 400;
-    text-shadow: 4px 4px 4px #aaa;
+    /* text-shadow: 4px 4px 4px #aaa; */
     background-color: #96BBD4
 }
 section{
-    /* height: 60vh; */
+    height: 80vh;
     padding-top: 15vh;
     margin: 0 15vw;
     box-sizing: border-box;
@@ -29,7 +29,7 @@ section{
 }
 a:hover {
   color: #96BBD4;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 1rem;
   text-decoration-color: rbg(181,181,181);
 }
@@ -37,7 +37,7 @@ a:hover {
 /* Nav Bar */
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 15vh;
     min-height: max-content;
@@ -45,15 +45,17 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* overflow: hidden; */
+
 }
 .logo {
     max-height: 12vh;
-    margin-left: .25vw;
-    font-size: 5vh;
+    font-size: 40px;
     shape-image-threshold: inherit;
     overflow: hidden;
     color: #96BBD4;
+    padding:0 0;
+    margin: 0 0;
+    margin-left: 15vw;
 }
 .logo:hover {
     cursor: default;
@@ -62,7 +64,8 @@ nav {
     display: flex;
     gap: 2rem;
     list-style: none;
-    font-size: 25px;
+    font-size: 16px;
+    margin-right: 15vw;
 }
 /* Hyperlinks */
 a {
@@ -161,6 +164,7 @@ a {
 .about-container{
     display: flex;
     gap: 5vw;
+    margin-top: 10px;
 }
 
 /* Profile */
@@ -172,18 +176,18 @@ a {
 p {
     color:rgb(85,85,85);
     display: flex;
-    font-size: 2.2vh;
+    font-size: 12px;
     }
 .title{
     font-size: 40px;
     text-align: left;
-    margin-bottom: 0;
-    margin-left: .25vw;
+    margin-top: 50px;
+    /* margin-left: 15vw; */
     
 }
 .auto-type{
-    font-size: 22.5px;
-    margin-bottom: 1rem;
+    font-size: 16px;
+    margin-bottom: 110px;
     display: inline-flex;
     text-align: left;
     
@@ -191,7 +195,8 @@ p {
 .profile-textbox{
     display: flex;
     justify-content: left;
-    font-size: 18px;
+    font-size: 12px;
+    /* margin-top: 6px; */
 }
 .profile-pic-container{
     height: max-content;
@@ -202,6 +207,11 @@ p {
 .icon{
     cursor: pointer;
     height: 4vh;
+    opacity: .5;
+}
+.icon:hover{
+    opacity: 1;
+    transform: scale(1.2);
 }
 .btn-container{
     display: flex;
@@ -209,15 +219,16 @@ p {
     gap: 1vw;
 }
 .btn{
-    font-weight: 600;
+    font-weight: medium;
     transition: all 300ms ease;
     padding: 1rem;
     width: 10vw;
-    border-radius: 2rem;
+    border-radius: 10px;
     background: none;
     color:rgb(85,85,85);
     /* width: fit-content; */
     margin: 4.25vh 0;
+    border-width: 1.25px;
     
 } 
 .btn:hover, .btn-color-2:hover{
@@ -243,21 +254,22 @@ p {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 2vh
+    margin-top: 1vh
 
 }
 .btn-color-2 {
-    font-family: "Meridian", serif;
+    font-family: "Inter", serif;
     width: 100%;
     padding: 2vh;
-    font-size: 16px;
+    font-size: 12px;
     background: transparent;
     border: black 1px solid;
     color: black;
     cursor: pointer;
     text-align: left;
     transition: 0.3s;
-    border-radius: 20px;
+    border-radius: 10px;
+    border-width: 1.25px;
 
 }
 .btn-color-2.active {
@@ -270,7 +282,7 @@ p {
 .cards {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     margin-top: 2vh;
     border-color: black;
@@ -284,13 +296,14 @@ p {
     width: 100%;
     background: transparent;
     padding-left: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: rgb(0, 7, 80) solid;
     margin: 0 0;
     cursor: pointer;
+    border-width: 1.25px;
 }
 .card p{
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(0, 7, 80);
     font-weight: bold;
     padding-bottom: 1vh;
@@ -299,9 +312,10 @@ p {
 .card h3{
     margin-top: 0vh;
     margin-bottom: 0vh;
+    font-size: 16px;
 }
 .card h2{
-    font-size: 22px;
+    font-size: 16px;
     color: black;
     font-weight: bold;
     margin-top: 2vh;
@@ -329,12 +343,13 @@ p {
 .btn-3{
     background: transparent;
     border: black 1px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     color: rgb(0, 7, 80);
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
     padding: 1vw;
+    border-width: 1.25px;
     
 }
 .radar{
@@ -413,12 +428,13 @@ p {
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 12px;
     white-space: nowrap;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     pointer-events: none;
+    border-width: 1.25px;
 }
 
 /* Show Tooltip on Hover */
@@ -426,21 +442,34 @@ p {
     opacity: 1;
 }
 
-.contact-info-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    margin: 0 0;
-    margin: 5vh 5vw;
-}
+
 
 /* Footer config */
 footer{
     display: relative;
     position: bottom;
-    margin: 0 0;
+    margin-top: 25vh;
+    min-height: 250px;
 }
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(0, 7, 80);
+    color: white;
+    padding-top: 40px;
+    gap: 20px;
+    margin-top: 30vh;
+}
+
+.contact-footer-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 40px; */
+    margin: 0 15vw;
+}
+
 footer a {
     color: white;
     align-items: center;
@@ -451,4 +480,40 @@ footer a {
 }
 footer p{
     color: white;
+    margin: 0vh 15vw;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-self: left;
+    width:50%;
+}
+.message-box{
+    width: 100%;
+    color: black;
+    background-color: #96BBD4; 
+    opacity: .9;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 1.25px;
+}
+.message-box.hover{
+    width: 100%;
+    color: #96BBD4; 
+    opacity: 1;
+}
+.contact-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 20px;
+}
+footer .icon{
+    cursor: pointer;
+    height: 4vh;
+    opacity: 1;
+}
+footer .icon:hover{
+    transform: scale(1.2);
 }
